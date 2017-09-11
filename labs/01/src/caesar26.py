@@ -7,14 +7,26 @@
 '''
 def encrypt(key, plaintext):
     ciphertext = plaintext # dummy instruction
-    return ciphertext
+    output = ""
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    for letter in ciphertext:
+        if letter.isalpha():
+            ind = alphabet.index( letter )
+            output += alphabet[ ( ind + int( key ) ) % 26]
+    return output
 
 ''' decrypts the ciphertext with a key
     based on the caesar cipher algorithm
-    and returns the plaintext
+    and returns the plaintext    return plaintext
     (string, string) -> string
     REQ: key matches [0-9]*
     REQ: ciphertext matches [a-z]*'''    
 def decrypt(key, ciphertext):
     plaintext = ciphertext # dummy instruction
-    return plaintext
+    output = ""
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    for letter in ciphertext:
+        if letter.isalpha():
+            ind =  alphabet.index(letter)
+            output += alphabet[ ( ind - int(key) ) % 26 ]
+    return output
