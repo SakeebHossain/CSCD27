@@ -11,8 +11,8 @@ def encrypt(key, plaintext):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     for letter in ciphertext:
         if letter.isalpha():
-            ind = alphabet.index( letter )
-            output += alphabet[ ( ind + int( key ) ) % 26]
+            ind = ord( letter ) - 96
+            output += chr( ( ( ind + int( key ) ) % 25 ) + 96 )
     return output
 
 ''' decrypts the ciphertext with a key
@@ -27,6 +27,6 @@ def decrypt(key, ciphertext):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     for letter in ciphertext:
         if letter.isalpha():
-            ind =  alphabet.index(letter)
-            output += alphabet[ ( ind - int(key) ) % 26 ]
+            ind =  ord( letter ) - 96
+            output += chr( ( ( ind - int( key ) ) % 25 ) + 96 )
     return output
