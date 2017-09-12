@@ -8,11 +8,11 @@
 def encrypt(key, plaintext):
     ciphertext = plaintext # dummy instruction
     output = ""
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
     for letter in ciphertext:
         if letter.isalpha():
-            ind = ord( letter ) - 96
-            output += chr( ( ( ind + int( key ) ) % 25 ) + 96 )
+            old = ord( letter ) - 97
+            new = ( old + int( key ) ) % 26 + 97
+            output += chr ( new )
     return output
 
 ''' decrypts the ciphertext with a key
@@ -24,9 +24,9 @@ def encrypt(key, plaintext):
 def decrypt(key, ciphertext):
     plaintext = ciphertext # dummy instruction
     output = ""
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
     for letter in ciphertext:
         if letter.isalpha():
-            ind =  ord( letter ) - 96
-            output += chr( ( ( ind - int( key ) ) % 25 ) + 96 )
+            old = ord( letter ) - 97
+            new = ( old - int( key ) ) % 26 + 97
+            output += chr ( new )
     return output
