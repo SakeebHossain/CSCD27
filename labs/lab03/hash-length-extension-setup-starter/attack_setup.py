@@ -29,17 +29,23 @@ def forgeIllegalPayload(message, token, extension):
     - use the secret key
     However, you might know the length of the secret key (6)
     '''
-    # set MD5 to contain state of token
+    # set MD5 to contain state of token. This will 'restore' the md5 to state
+    # it would have been in if it recieved a string in the format secret + m + 
+    # [padding req'd for m and secret].
+    
     h = md5(state=token.decode("hex"),count=512)
     
     # add extension to it
     h.update(extension)
     
-    print(md5p._decode(h.hexdigest()))
+    # this should be the output the server gets for the token
+    illegalToken = h.hexdigest()
     
-    illegalMessage = message + extension
+    # since the server will prepend the secret to a message when checking it,
+    # we simply need to send it a message of m + [padding req'd for m and secret] + extension. 
+    illegalMessage = message + padding(8 * (len(message) + len(KEY)))  + extension
     
-    return h.hexdigest(), illegalMessage
+    return illegalToken, illegalMessage
     
 
 #############
@@ -48,6 +54,7 @@ def forgeIllegalPayload(message, token, extension):
 
 if __name__ == "__main__":
     
+    ##################################
     ################################
     # exchange between Alice and Bob
     ################################
