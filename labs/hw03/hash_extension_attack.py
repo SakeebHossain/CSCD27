@@ -5,6 +5,8 @@ from md5p import md5, padding
 ### attack ####
 ###############
 
+KEY = 11
+
 def attack(url, tag, sid, mark): 
     # parameter url is the attack url you construct
     parsedURL = urlparse.urlparse(url)
@@ -14,11 +16,16 @@ def attack(url, tag, sid, mark):
     httpconn = httplib.HTTPConnection(parsedURL.hostname, parsedURL.port)
 
     h = md5(state=tag.decode("hex"),count=512)
-    h.update("&mark=100")
+    h.update("&sid=1001537483&mark=100")
     illegalTag = h.hexdigest()
 
-    query = parsedURL.path + "?tag=" + illegalTag + "&sid=" + sid + "&mark=" + str(mark); 
-
+    query = parsedURL.path + \
+            "?tag=" + illegalTag + \
+            "&sid=" + sid + \
+            urllib.quote(padding(8 * (15 + KEY))) + \
+            "&sid=" + sid + \
+            "&mark=" + str(mark)
+    #print(query)
     # issue server-API request
     httpconn.request("GET", query)
 
@@ -44,12 +51,5 @@ if __name__ == "__main__":
     tag = "384748b103f0901260027373ebbba319"
     sid = "1001537483"
     mark = "100"
-    attack(url, tag, sid, mark)
-    #print(attack(url, tag, sid, mark))
+    print(attack(url, tag, sid, mark))
 
-"""
-
-the second url basically generate the MAC for the url:
-/?sid=sid
-
-"""
