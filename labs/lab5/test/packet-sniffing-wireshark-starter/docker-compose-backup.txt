@@ -1,0 +1,28 @@
+If `docker-compose` does not work, you can build/run the network and the containers manually
+
+# build the containers (first time only)
+
+```
+$ cd alice
+$ mv Dockerfile Dockerfile.old
+$ mv Dockerfile.backup Dockerfile
+$ docker build -t alice . 
+$ cd ..
+$ cd mallory
+$ docker build -t mallory .
+$ cd ..
+```
+
+# run the network and the containers
+
+```
+$ docker network create --subnet=10.0.0.0/16 channel
+$ docker run -v $(pwd)/alice:/shared -d --name alice --net channel --ip 10.0.0.2 alice
+$ docker run --network=container:alice mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+```
+
+# stop and remove all networks and containers
+
+```
+$ ./clean.sh
+```

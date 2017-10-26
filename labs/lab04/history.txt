@@ -1,0 +1,500 @@
+    5  submit -c cscc11f17 -a A1 RBFsol_1001537483.tgz 
+    6  submit -f cscc11f17 -a A1 RBFsol_1001537483.tgz 
+    7  cd cscd27f17_space
+    8  cd labs
+    9  ls
+   10  cd CSCD27/
+   11  cd labs
+   12  ls
+   13  cd hw04
+   14  cd lab04
+   15  ls
+   16  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   17  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   18  ls
+   19  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   20  cd cscd27f17_space
+   21  ls
+   22  cd CSCD27/
+   23  ls
+   24  cd labs
+   25  ls
+   26  mv lab04 mw03
+   27  ls
+   28  mv mw03 hw03
+   29  ls
+   30  cd hw03
+   31  ls
+   32  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   33  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   34  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   35  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   36  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   37  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   38  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   39  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   40  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   41  git status
+   42  ls
+   43  cd ..
+   44  ls
+   45  git status
+   46  git add *
+   47  git pull
+   48  git commit -m "working on hw03"
+   49  git push
+   50  cd cscd27f17_space/CSCD27/labs/hw03/
+   51  ls
+   52  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   53  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   54  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   55  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   56  clear
+   57  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   58  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   59  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   60  clear
+   61  clear
+   62  clear
+   63  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   64  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   65  clear
+   66  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   67  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   68  clear
+   69  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   70  clear
+   71  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   72  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   73  clear
+   74  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   75  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   76  clear
+   77  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   78  clear
+   79  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   80  clear
+   81  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   82  clear
+   83  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+   84  cd cscd27f17_space/CSCD27/labs/
+   85  ls
+   86  cd ..
+   87  ls
+   88  git status
+   89  git pull
+   90  git add *
+   91  git commit -m "lab04"
+   92  git push
+   93  chmod 777 *
+   94  git status
+   95  git add *
+   96  git status
+   97  git commit -m "lab04"
+   98  git push
+   99  cd cscd27f17_space/CSCD27/labs/lab04
+  100  ls
+  101  docker run -v $(pwd):/shared -it ubuntu bash
+  102  cd ..
+  103  chmod 777 *
+  104  ls -l
+  105  cd lab04
+  106  ls
+  107  ls
+  108  cd cscd
+  109  cd cscd27f17_space
+  110  ls
+  111  cd CSCD27/
+  112  ls
+  113  cd labs/
+  114  ls
+  115  git pull
+  116  cd hw04
+  117  ;s
+  118  ls
+  119  cd md5-collision-starter
+  120  ls
+  121  docker build . -t hashclash 
+  122  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+  123  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+  124  clear
+  125  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+  126  clear
+  127  clear
+  128  clear
+  129  docker run -v $(pwd):/shared python python2.7 /shared/hash_extension_attack.py
+  130  clear
+  131  docker run -v $(pwd):/shared -it hashclash bash
+  132  docker run -v $(pwd):/shared -it hashclash bash
+  133  cd cscd27f17_space
+  134  ls
+  135  cd CSCD27/labs/
+  136  ls
+  137  cd hw04
+  138  ls
+  139  cd md5-collision-starter
+  140  ls
+  141  docker build . -t hashclash
+  142  ls
+  143  gnome-open .
+  144  clear
+  145  ./hashclash -p prefix -o prefix1 prefix2
+  146  chmod 777 *
+  147  ./hashclash -p prefix -o prefix1 prefix2
+  148  ls
+  149  ./hashclash -p prefix -o prefix1 prefix2
+  150  cd ..
+  151  ls
+  152  cd ..
+  153  ls
+  154  hw03
+  155  ls
+  156  ls
+  157  cd hw03
+  158  ls
+  159  ./hashclash -p prefix -o prefix1 prefix2
+  160  clear
+  161  ls
+  162  cd ../hw04
+  163  ;s
+  164  ls
+  165  clear
+  166  cd md5-collision-starter
+  167  ls
+  168  ./hashclash -p prefix -o prefix1 prefix2
+  169  chmod 777 *
+  170  ./hashclash -p prefix -o prefix1 prefix2
+  171  cd ..
+  172  chmod 777 *
+  173  ./hashclash -p prefix -o prefix1 prefix2
+  174  ls
+  175  cd md5-collision-starter
+  176  ls
+  177  cd md5-collision-starter
+  178  cd ../..
+  179  ls
+  180  chmod 777 *
+  181  cd hw04
+  182  chmod 777 *
+  183  cd md5-collision-starter
+  184  ls
+  185  chmod 777 *
+  186  ./hashclash -p prefix -o prefix1 prefix2
+  187  ls
+  188  cmp prefix suffix 
+  189  md5sum prefix suffix 
+  190  md5sum pgm1.py pgm2.py 
+  191  md5sum pgm1.py pgm2.py | cut 1
+  192  md5sum pgm1.py pgm2.py | cut -f 1
+  193  md5sum pgm1.py pgm2.py | cut -f1
+  194  md5sum pgm1.py pgm2.py | cut -d' ' -f1
+  195  md5sum pgm1.py pgm2.py | cut -d' ' -f2
+  196  clear
+  197  ls
+  198  cd cscc85f17_space
+  199  ;s
+  200  ls
+  201  git clone https://github.com/SakeebHossain/Phase1---Little-Lost-Robot.git
+  202  tar -xzf C85_Lab1_starter.tar.gz 
+  203  tar xvf C85_Lab1_starter.tar.gz 
+  204  ./compile.sh 
+  205  ls
+  206  ./ParticleFilters
+  207  ./ParticleFilters map_C.ppm 500
+  208  ./ParticleFilters map_C.ppm 500
+  209  ./ParticleFilters map_C.ppm 500
+  210  ./ParticleFilters map_C.ppm 500
+  211  cd cscc85f17_space
+  212  ls
+  213  cd Phase1---Little-Lost-Robot/
+  214  git pull
+  215  git branch -a
+  216  git checkout AltPartInit
+  217  git commit -m "ignore"
+  218  git add *
+  219  git commit -m "ignore"
+  220  git checkout AltPartInit
+  221  ./ParticleFilters map_C.ppm 500
+  222  cd Distro/
+  223  ls
+  224  cd Distro/
+  225  ./ParticleFilters map_C.ppm 500
+  226  cd Lab1
+  227  ls
+  228  cd ..
+  229  ls
+  230  cd Lab\ 1/
+  231  ./ParticleFilters map_C.ppm 500
+  232  ls
+  233  cd Distro/
+  234  ./ParticleFilters map_C.ppm 500
+  235  ./ParticleFilters map_C.ppm 500
+  236  ./ParticleFilters map_C.ppm 500
+  237  ./compile.sh 
+  238  ./ParticleFilters map_C.ppm 500
+  239  ./compile.sh 
+  240  ./compile.sh 
+  241  ./compile.sh 
+  242  clear
+  243  ./compile.sh 
+  244  clear
+  245  ./compile.sh 
+  246  ./ParticleFilters map_C.ppm 500
+  247  ./compile.sh 
+  248  ./ParticleFilters map_C.ppm 500
+  249  ./ParticleFilters map_C.ppm 500
+  250  ./compile.sh 
+  251  ./ParticleFilters map_C.ppm 500
+  252  ./ParticleFilters map_C.ppm 100
+  253  ./compile.sh 
+  254  ./ParticleFilters map_C.ppm 100
+  255  ./compile.sh 
+  256  ./ParticleFilters map_C.ppm 100
+  257  ./compile.sh 
+  258  ./ParticleFilters map_C.ppm 100
+  259  ./compile.sh 
+  260  ./ParticleFilters map_C.ppm 100
+  261  ./compile.sh 
+  262  ./ParticleFilters map_C.ppm 100
+  263  ./compile.sh 
+  264  ./ParticleFilters map_C.ppm 100
+  265  ./compile.sh 
+  266  ./ParticleFilters map_C.ppm 100
+  267  ./ParticleFilters map_C.ppm 500
+  268  ./ParticleFilters map_C.ppm 500
+  269  ./compile.sh 
+  270  ./ParticleFilters map_C.ppm 500
+  271  ./compile.sh 
+  272  ./ParticleFilters map_C.ppm 500
+  273  ./compile.sh 
+  274  ./ParticleFilters map_C.ppm 500
+  275  ./compile.sh 
+  276  ./ParticleFilters map_C.ppm 500
+  277  ./compile.sh 
+  278  ./ParticleFilters map_C.ppm 500
+  279  ./compile.sh 
+  280  ./ParticleFilters map_C.ppm 500
+  281  ./ParticleFilters map_C.ppm 500
+  282  ./compile.sh 
+  283  ./ParticleFilters map_C.ppm 500
+  284  ./compile.sh 
+  285  ./ParticleFilters map_C.ppm 500
+  286  ./ParticleFilters map_C.ppm 500
+  287  ./ParticleFilters maze.ppm 500
+  288  ./ParticleFilters map_A.ppm 500
+  289  ./ParticleFilters map_A.ppm 1000
+  290  ./compile.sh 
+  291  ./ParticleFilters map_A.ppm 100
+  292  ./compile.sh 
+  293  ./ParticleFilters map_A.ppm 100
+  294  ./compile.sh 
+  295  ./ParticleFilters map_A.ppm 100
+  296  ./ParticleFilters map_A.ppm 100
+  297  ./ParticleFilters map_A.ppm 1000
+  298  ./ParticleFilters maze.ppm 1000
+  299  ./ParticleFilters maze.ppm 1000
+  300  ./compile.sh 
+  301  ./ParticleFilters maze.ppm 1000
+  302  ./ParticleFilters map_C.ppm 1000
+  303  ./compile.sh 
+  304  ./ParticleFilters map_C.ppm 1000
+  305  ./ParticleFilters map_C.ppm 1000
+  306  ./compile.sh 
+  307  ./ParticleFilters map_C.ppm 1000
+  308  ./compile.sh 
+  309  ./ParticleFilters map_C.ppm 1000
+  310  ./ParticleFilters map_C.ppm 1000
+  311  ./compile.sh 
+  312  ./ParticleFilters map_C.ppm 1000
+  313  ./ParticleFilters map_A.ppm 1000
+  314  ./compile.sh 
+  315  ./ParticleFilters map_A.ppm 1000
+  316  ./compile.sh 
+  317  ./ParticleFilters map_A.ppm 1000
+  318  ./compile.sh 
+  319  ./ParticleFilters map_A.ppm 1000
+  320  ./compile.sh 
+  321  ./ParticleFilters map_A.ppm 1000
+  322  ./compile.sh 
+  323  ./ParticleFilters map_A.ppm 1000
+  324  ./compile.sh 
+  325  ./ParticleFilters map_A.ppm 1000
+  326  ./compile.sh 
+  327  ./ParticleFilters map_A.ppm 1000
+  328  git status
+  329  ./compile.sh 
+  330  ./ParticleFilters map_A.ppm 1000
+  331  ./compile.sh 
+  332  ./ParticleFilters map_A.ppm 1000
+  333  ./ParticleFilters map_A.ppm 5000
+  334  git status
+  335  git add *
+  336  git commit -m 'An update'
+  337  git push
+  338  ./compile.sh 
+  339  ./ParticleFilters map_A.ppm 5000
+  340  ./compile.sh 
+  341  ./ParticleFilters map_A.ppm 5000
+  342  ./ParticleFilters maze.ppm 5000
+  343  ./ParticleFilters map_C.ppm 5000
+  344  ./ParticleFilters map_C.ppm 5000
+  345  ./ParticleFilters map_A.ppm 100
+  346  ./ParticleFilters map_B.ppm 1000
+  347  ./ParticleFilters map_B.ppm 1000
+  348  ./ParticleFilters map_A.ppm 100
+  349  ./ParticleFilters map_A.ppm 5000
+  350  ./ParticleFilters map_A.ppm 5000
+  351  ./ParticleFilters maze.ppm 5000
+  352  ./ParticleFilters map_C.ppm 3000
+  353  ./ParticleFilters map_C.ppm 5000
+  354  ./ParticleFilters map_C.ppm 100
+  355  ./compile.sh 
+  356  ./ParticleFilters map_C.ppm 100
+  357  ./ParticleFilters map_C.ppm 5000
+  358  ./ParticleFilters map_C.ppm 1000
+  359  ./compile.sh 
+  360  ./compile.sh 
+  361  ./ParticleFilters map_C.ppm 1000
+  362  ./ParticleFilters maze.ppm 5000
+  363  git status
+  364  git add *
+  365  git pull
+  366  git add *
+  367  git commit -m "turn 180 version"
+  368  git push
+  369  git checkout master
+  370  git pull
+  371  git pull --force
+  372  ls
+  373  cd ..
+  374  ls
+  375  cd ..
+  376  l
+  377  cd Distro/
+  378  ls
+  379  git checkout master
+  380  git status
+  381  git pull
+  382  ls
+  383  cd ..
+  384  ls
+  385  cd Lab\ 1/
+  386  LS
+  387  ls
+  388  cd Distro/
+  389  ls
+  390  git pull
+  391  git status
+  392  git add *
+  393  git commit -m "stuff"
+  394  git pull
+  395  git push
+  396  git pull
+  397  cd ..
+  398  ls
+  399  cd ..
+  400  ls
+  401  cd Lab\ 1/
+  402  git pull
+  403  ls
+  404  cd Distro/
+  405  ./compile.sh 
+  406  ./ParticleFilters maze.ppm 2000
+  407  ./ParticleFilters maze.ppm 1000
+  408  ./ParticleFilters maze.ppm 100
+  409  ./ParticleFilters maze.ppm 500
+  410  ./ParticleFilters maze.ppm 1000
+  411  ./ParticleFilters map_D.ppm 1000
+  412  ./ParticleFilters map_D.ppm 100
+  413  cd cscc85f17_space
+  414  cd Phase1---Little-Lost-Robot/
+  415  cd Lab\ 1/
+  416  cd Distro/
+  417  ls
+  418  ./ParticleFilters map_A.ppm 3000
+  419  ./compile.sh 
+  420  ./ParticleFilters map_A.ppm 3000
+  421  ./ParticleFilters map_A.ppm 3000
+  422  ./ParticleFilters map_D.ppm 100
+  423  ./ParticleFilters map_C.ppm 1000
+  424  ./ParticleFilters map_C.ppm 500
+  425  ./ParticleFilters map_C.ppm 1000
+  426  ./ParticleFilters map_B.ppm 1000
+  427  ./ParticleFilters map_B.ppm 1500
+  428  ./ParticleFilters map_A.ppm 1000
+  429  ./ParticleFilters map_A.ppm 3000
+  430  ./ParticleFilters map_A.ppm 3000
+  431  ./ParticleFilters map_A.ppm 50000
+  432  ./ParticleFilters map_A.ppm 10000
+  433  ./ParticleFilters map_A.ppm 10000
+  434  ./ParticleFilters map_D.ppm 1000
+  435  ./ParticleFilters maze.ppm 1000
+  436  ./ParticleFilters map_A.ppm 1000
+  437  ./ParticleFilters map_A.ppm 3000
+  438  ./ParticleFilters map_A.ppm 7000
+  439  r
+  440  ./ParticleFilters map_D.ppm 1000
+  441  ./ParticleFilters map_C.ppm 1000
+  442  ./ParticleFilters map_B.ppm 1000
+  443  ./ParticleFilters maze.ppm 1000
+  444  tar -cvzf ParticleFilter_AWSHAW.tgz ParticleFilters.c *.h REPORT.TXT compile.sh 
+  445  tar -cvzf ParticleFilter_AWSHAW.tgz ParticleFilters.c *.h REPORT.TXT compile.sh ParticleUtils.o
+  446  ./compile.sh BAA
+  447  submit -c csccc85f17 -a Lab1 -f ParticleFilter_AWSHAW.tgz 
+  448  submit -c cscc85f17 -a Lab1 -f ParticleFilter_AWSHAW.tgz 
+  449  man gpg
+  450  docker run -v $(pwd):/shared -it ubuntu bash
+  451  cd cscd27f17_space
+  452  ls
+  453  cd CSCD27/
+  454  ls
+  455  cd lab5
+  456  ls
+  457  cd ..
+  458  ls
+  459  cd CSCD27/
+  460  cd labs/
+  461  cd lab5
+  462  ls
+  463  docker-compose build
+  464  docker exec -it alice bash
+  465  ls
+  466  cd cscd27f17_space
+  467  ls
+  468  cd CSCD27/
+  469  cd labs/
+  470  cd lab5
+  471  ls
+  472  docker-compose build
+  473  docker-compose up -d
+  474  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  475  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  476  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  477  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  478  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  479  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  480  docker-compose stop alice
+  481  docker compose up -d alice
+  482  docker-compose up -d alice
+  483  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  484  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i
+  485  ./clean.sh
+  486  chmod 777 *
+  487  ./clean.sh
+  488  docker-compose stop
+  489  docker-compose rm
+  490  docker-compose up -d
+  491  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  492  docker-compose sop
+  493  docker-compose stop
+  494  docker-compose rm
+  495  chmod a+x ./clean.sh
+  496  docker-compose build
+  497  docker-compose up -d
+  498  docker exec mallory tcpdump -i eth0 -U -s 0 -w - | wireshark -k -i -
+  499  ls
+  500  docker exec -it alice bash
+  501  docker ps -a
+  502  ls
+  503  history
+  504  history > history.txt

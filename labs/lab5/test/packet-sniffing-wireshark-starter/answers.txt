@@ -1,0 +1,6 @@
+1: replace this message with your answer
+2: same here
+3: and here
+4: but remember
+5: none might be a good answer
+6: do not mess up with the numbers if you do not want the automarker to give you a 0 
