@@ -6,7 +6,7 @@ iptables -F -t mangle
 
 if [ `cat /proc/sys/net/ipv4/ip_forward` -eq 1 ]
 then
-    echo "Welcome to SecLab" > index.html
+    echo "Welcome to POOPLab" > index.html
     chmod 777 index.html
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
     iptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPT

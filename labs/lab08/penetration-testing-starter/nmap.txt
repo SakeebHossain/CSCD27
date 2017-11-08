@@ -1,0 +1,17 @@
+Starting Nmap 6.47 ( http://nmap.org ) at 2017-11-07 22:20 UTC
+Nmap scan report for metasploitable.penetrationtestingstarter_channel (10.0.0.2)
+Host is up (0.00012s latency).
+Not shown: 4094 closed ports
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+1099/tcp open  rmiregistry GNU Classpath grmiregistry
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+MAC Address: 02:42:0A:00:00:02 (Unknown)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.11 - 3.14
+Network Distance: 1 hop
+Service Info: Host: localhost
+
+
