@@ -1,44 +1,29 @@
-import BaseHTTPServer
-import urllib
-import urllib2
+# https://ruslanspivak.com/lsbaws-part1/
+import socket
 
-# https://www.reddit.com/r/learnpython/comments/2iv1c4/best_way_to_listen_on_port_80_for_json_being/
+HOST, PORT = '', 8080
 
-class MyServer(BaseHTTPServer.BaseHTTPRequestHandler):
+listen_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+listen_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+listen_socket.bind((HOST, PORT))
+listen_socket.listen(1)
+print 'Serving HTTP on port %s ...' % PORT
+while True:
+    # Receive POST request from Alice
+    client_connection, client_address = listen_socket.accept()
+    request = client_connection.recv(1024)
+    print request
+
+    http_response = """\
+HTTP/1.1 200 OK
+
+Hello, World!
+"""
+    client_connection.sendall(http_response)
+    client_connection.close()
     
-    def do_POST(s):
-        """Respond to a POST request."""
-
-        # Extract and print the contents of the POST
-        length = int(s.headers['Content-Length'])
-        
-        print "~~~~~~ ALICE ~~~~~~~~~~~~~~~~~~~~~"
-        print s.rfile.read(length).decode('utf-8')
-        print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
-        
-        make_POST()
-
-def make_POST():
-    url = "http://http-only.seclab.space"
-    data = urllib.urlencode({'username' : 'alice', 'password'  : 'pass4alice'})
-    req = urllib2.Request(url, data)
-    response = urllib2.urlopen(req)
-
-    print "~~~~~~ MALLORY ~~~~~~~~~~~~~~~~~~~~"
-    print response.read()
-    print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"    
-
-
-
-
-
-if __name__ == '__main__':
-    print "serving....\n"
-    server = BaseHTTPServer.HTTPServer(('', 8080), MyServer)
-    server.serve_forever()
-
-
-
-
-
-
+    # Make POST request to server
+    
+    # Receive POST request from server
+    
+    # Send POST request  
