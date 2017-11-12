@@ -25,7 +25,7 @@ var do_request = function(){
     request.post(protocol + "://"+ config[protocol].host + "/", {form:config[protocol].data, timeout: 2000}, function (err, response, body) {
         if (err) return console.log(err);
         if (response.statusCode != 200) return console.log(response.statusCode);
-        return console.log(body + " " + protocol);
+        return console.log(body);
     });
 };
 

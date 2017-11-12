@@ -41,7 +41,7 @@ if __name__ == "__main__":
         
         # Receive POST response from server
         response = seclab_socket.recv(1024)  
-        print response
+        # print response
         
         # Send POST response to Alice.
         client_connection.send(response)
